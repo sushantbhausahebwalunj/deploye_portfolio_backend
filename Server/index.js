@@ -12,7 +12,7 @@ dotenv.config({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['https://sushantbhausahebwalunj-github-io.onrender.com/'];
 
 const corsOptions = {
   origin: function (origin, callback) {

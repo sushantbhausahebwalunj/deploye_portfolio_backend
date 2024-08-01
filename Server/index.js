@@ -14,15 +14,15 @@ app.use(express.urlencoded({ extended: true }));
 
 const allowedOrigins = ['https://sushantbhausahebwalunj-github-io.onrender.com/'];
 
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  }
-};
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+//       callback(null, true);
+//     } else {
+//       callback(new Error('Not allowed by CORS'));
+//     }
+//   }
+// };
 
 app.use(cors({
   origin: allowedOrigins

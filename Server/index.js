@@ -12,7 +12,7 @@ dotenv.config({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const allowedOrigins = ['https://sushantbhausahebwalunj-github-io.onrender.com/'];
+const allowedOrigin = 'https://sushantbhausahebwalunj-github-io.onrender.com';
 
 // const corsOptions = {
 //   origin: function (origin, callback) {
@@ -25,7 +25,7 @@ const allowedOrigins = ['https://sushantbhausahebwalunj-github-io.onrender.com/'
 // };
 
 app.use(cors({
-  origin: allowedOrigins
+  origin: allowedOrigin
 }));
 
 app.get("/", (req, res) => {

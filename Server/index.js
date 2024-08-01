@@ -24,7 +24,9 @@ const corsOptions = {
   }
 };
 
-app.use(cors(corsOptions));
+app.use(cors({
+  origin: allowedOrigins
+}));
 
 app.get("/", (req, res) => {
   res.send("I'm from backend");
